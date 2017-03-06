@@ -19,10 +19,6 @@ css:
     valid: true
     bestPractices: true
 
-screenshots:
-  - path: 'index.html'
-    sizes: [320, 400, 608, 960, 1440]
-
 functionality:
   - path: 'index.html'
     noErrors: true
