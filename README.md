@@ -1,6 +1,6 @@
 # Designing form errors
 
-**Write up code for accessible, well designed form error messages with a little Javascript to help.**
+**Write up code for accessible, well designed form error messages with a little JavaScript to help.**
 
 - Approx. completion time: 1 hour
 - Deliverables: HTML, CSS, images
