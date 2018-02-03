@@ -1,27 +1,50 @@
 repo: 'designing-form-errors'
+canvasCourse: 'web-dev-4'
 
-naming: true
-restrictFileTypes: true
-liveWebsite: true
-
-git:
-  numCommits: 1
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-2
+  - screenshots-all
+  - html
+  - css
+  - css-order-modules-type-main
+  - forms
+  - modulifier
+  - modulifier-buttons
+  - typografier
 
 html:
   - path: 'index.html'
-    valid: true
-    bestPractices: true
+    outline: false
+    has:
+      - 'form[novalidate] > div.error-message-highlighted[role][aria-live] > h3 '
+      - 'form > div > label[for] + input + p.error-message > i.icon + span.icon-label'
+      - 'input[type="email"]'
+      - 'input[type="url"]'
+      - 'input[type="checkbox"]'
+      - 'button'
+      - 'script[src*="form-validation-helper"]'
+    search:
+      - 'Send'
+      - 'There are items that require your attention'
+      - 'Name'
+      - 'Please provide a name'
+      - 'Email'
+      - 'Please provide a properly formatted email address'
+      - 'Website'
+      - 'I’m totally awesome!'
+      - 'Please agree that you’re totally awesome'
 
 css:
   - path: 'css/main.css'
-    valid: true
-    bestPractices: true
 
 screenshots:
   - path: 'index.html'
-    sizes: [320, 400, 608, 960, 1440]
+    sizes: [960]
+    label: "Submit"
+    before: |
+      $('button').click();
+      done();
 
 functionality:
   - path: 'index.html'
